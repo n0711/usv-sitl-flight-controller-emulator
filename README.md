@@ -58,6 +58,16 @@ In a third terminal, view the JSON telemetry:
 python3 src/json_receiver.py
 ```
 
+To bypass MAVProxy playback and stream an existing `.BIN`/`.tlog` log directly
+to a local GCS UDP listener:
+
+```bash
+python3 src/replay_log_to_udp.py test_usv.bin --target-host 127.0.0.1 --target-port 16000
+```
+
+Use `--speed 0` for an unpaced smoke test or `--max-packets 100` for a short
+burst.
+
 With SITL running, run the command test:
 
 ```bash
