@@ -7,6 +7,10 @@ The project uses ArduRover SITL to emulate a Pixhawk-style USV controller,
 MAVLink2REST to expose a local HTTP API, and Python utilities to publish compact
 JSON telemetry for downstream autonomy clients.
 
+## Why I built this
+
+To unblock an autonomy team that needed to develop and test against a USV's flight-controller interface without access to the physical Pixhawk hardware. Rather than tie their work to a real controller they could not easily get, I emulated it: the same ArduRover SITL flight-controller behaviour, the same MAVLink interface, and a clean JSON telemetry feed, all runnable locally. It turned a hardware dependency that would have stalled their integration into something they could clone and run in minutes on their own machines.
+
 ## Tech Stack
 
 - Bash for setup, packaging, startup, environment checks, and command tests
