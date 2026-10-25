@@ -190,3 +190,9 @@ TEST_INSTRUCTIONS.md     step-by-step test script for the handoff package
 This is a local simulation and integration-test environment. It is not a
 replacement for hardware-in-the-loop testing or for validation on a real
 vessel.
+
+## Support this project
+
+If this project is useful to you, you can support its development with a one-off contribution via Revolut:
+
+**[revolut.me/nadiotis](https://revolut.me/nadiotis)**
